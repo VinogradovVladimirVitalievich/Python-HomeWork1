@@ -3,20 +3,35 @@
 # 10 –> Нет такого дня
 # 7 –> Воскресение
 
-const = int(input("Введите цифру: "))
-if const == 1:
-    print("Понедельник")
-elif const == 2:
-    print("Вторник")
-elif const == 3:
-    print("Среда")
-elif const == 4:
-    print("Четверг")
-elif const == 5:
-    print("Пятница")
-elif const == 6:
-    print("Суббота")
-elif const == 7:
-    print("Воскресенье")
-elif const != 7:
-    print("Нет такого дня") 
+# const = int(input("Введите цифру: "))
+# if const == 1:
+#     print("Понедельник")
+# elif const == 2:
+#     print("Вторник")
+# elif const == 3:
+#     print("Среда")
+# elif const == 4:
+#     print("Четверг")
+# elif const == 5:
+#     print("Пятница")
+# elif const == 6:
+#     print("Суббота")
+# elif const == 7:
+#     print("Воскресенье")
+# elif const != 7:
+#     print("Нет такого дня") 
+
+
+# Задача 2. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
+# A (3,6); B (2,1) -> 5,09
+# A (7,-5); B (1,-1) -> 7,21
+
+print("Введите координаты точки А:")
+x_A = float(input("X: "))
+y_A = float(input("Y: "))
+print("Введите координаты точки B:")
+x_B = float(input("X: "))
+y_B = float(input("Y: "))
+
+from math import sqrt
+print("Расстояние между точками A и B: ", round(sqrt((x_A - x_B)**2 + (y_A - y_B)**2), 2)) # Теорема Пифагора 
