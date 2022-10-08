@@ -56,6 +56,6 @@
 # 5 -> 2, 4
 # 8 -> 2, 4, 6, 8
 
-numbers = int(input("Введите число: "))
-for X in range(2, numbers+1, 2):
- print(X, end=" ")
+# numbers = int(input("Введите число: "))
+# for X in range(2, numbers+1, 2):
+#  print(X, end=" ")
