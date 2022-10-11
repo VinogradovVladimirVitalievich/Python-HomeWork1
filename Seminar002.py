@@ -26,3 +26,16 @@
 #         print(f"{x} | {y} | {int(sum)}")
         
 
+# Задача 2. Напишите программу, в которой пользователь будет задавать две строки, а программа - определять количество вхождений одной строки в другую.
+
+string_1 = input()
+string_2 = input()
+if len(string_1) > len(string_2):
+    print(string_1)
+    count = 0
+    for i in range(len(string_1)):
+            print(string_1[ i : i + len(string_2)])
+            if string_2 ==string_1[i:i+len(string_2)]:
+                count +=1
+print("количество совпадений строк", count) 
+    
