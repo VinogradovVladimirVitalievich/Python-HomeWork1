@@ -15,8 +15,7 @@
 # for x in range(0,2):
 #     for y in range(0,2):
 #         for z in range (0,2):
-#          sum = not (x and y) or z
-#         print(f"{x} | {y} | {z} | {int(sum)}")
+#         print(f"{x} | {y} | {z} | {int(not (x and y) or z)}")
 
 
 
@@ -40,6 +39,16 @@
 # str2 = "onetwonine"
 # print(LikeSymbols(str1, str2))
 
+# or
+
+# symbols = "oneone"
+# used =1
+# print(symbols)
+# phrase = "onetwonine"
+# for sym in symbols:
+#     if sym not in used:
+#         used.append(sym)
+#         print(f"{sym} - {phrase.count(sym)}")
 
     
 
@@ -52,3 +61,12 @@
 # for i, e2 in enumerate(lst):
 #     lst[i], e1 = e1, e2
 # print(lst)
+
+# or
+
+# numbers = [2, 3, -3, -2, -1, 0, 1]
+# steps = 2
+# print(numbers[:5])
+# print(numbers[5:])
+# numbers = numbers[-steps:] + numbers[:-steps]
+# print(numbers)
