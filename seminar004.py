@@ -33,3 +33,41 @@
 # print(numbers)
 # index = int(input("Введите индекс, который необходимо заменить: "))
 # print(chenge_index(numbers, index))
+
+
+# Задача 2. Актёров разделили на списки по трём качествам «умные», «красивые», «сильные». На главную роль нужен актёр обладающий всеми тремя качествами. Определите, сколько есть претендентов на главную роль. Списки актёров поместите в соответствующие файлы.
+# Красивые: Илья Федор Семен Олег Лев Антон Артем Боря Стас Марк Ян
+# Умные: Илья Георгий Лев Демьян Антон Владислав Боря Стас Марк Влад
+# Сильные: Федор Георгий Олег Демьян Артем Елисей Боря Стас Влад
+# def openFile(nameFile):
+#     f = open(nameFile, encoding='utf-8')
+#     phrase = f.readlines()
+#     f.close()
+#     list = phrase[0].split()
+#     return set(list)
+
+# beauty = openFile('beauty.txt')
+# strong = openFile('strong.txt')
+# smart = openFile('smart.txt')
+
+# print(beauty.intersection(smart).intersection(strong))
+
+# Задача 3. Сгенерируйте список случайных чисел от 1 до 20, состоящий из 10 элементов. Удалите из списка дубликаты уже имеющихся элементов.
+
+import random
+
+def GetNumbers():
+    data = open("list.txt", "w")
+    numbers = [random.randint(1 ,20) for i in range(0, 10)]
+    data.write(str(numbers))
+    print(numbers)
+    data.close
+GetNumbers()
+
+def FindeDublicate():
+    data = open("list.txt", "r", encoding="utf-8")
+    num = data.readline()[1:-1].split(", ")
+    num = [int(i) for i in num]
+    num = set(num)
+    print(type(num),num)
+FindeDublicate() 
