@@ -1,6 +1,17 @@
 # Задача 1. Создайте файл. Запишите в него N первых элементов последовательности Фибоначчи.
 # 6 –> 1 1 2 3 5 8
 
+
+firstnumber = 0
+secondnumber = 1
+count = 1000
+data = open("fibonachi.txt", "w")
+for i in range(count):
+    data.writelines(str(firstnumber)+ "\n")
+    (firstnumber, secondnumber) = (secondnumber, firstnumber + secondnumber)
+
+
+
 # Задача 2. В файле находятся названия фруктов. Выведите все фрукты, названия которых начинаются на заданную букву.
 # а –> абрикос, авокадо, апельсин, айва.
 
