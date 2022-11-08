@@ -54,20 +54,28 @@
 
 # Задача 3. Сгенерируйте список случайных чисел от 1 до 20, состоящий из 10 элементов. Удалите из списка дубликаты уже имеющихся элементов.
 
-import random
+# import random
 
-def GetNumbers():
-    data = open("list.txt", "w")
-    numbers = [random.randint(1 ,20) for i in range(0, 10)]
-    data.write(str(numbers))
-    print(numbers)
-    data.close
-GetNumbers()
+# def GetNumbers():
+#     data = open("list.txt", "w")
+#     numbers = [random.randint(1 ,20) for i in range(0, 10)]
+#     data.write(str(numbers))
+#     print(numbers)
+#     data.close
+# GetNumbers()
 
-def FindeDublicate():
-    data = open("list.txt", "r", encoding="utf-8")
-    num = data.readline()[1:-1].split(", ")
-    num = [int(i) for i in num]
-    num = set(num)
-    print(type(num),num)
-FindeDublicate() 
+# def FindeDublicate():
+#     data = open("list.txt", "r", encoding="utf-8")
+#     num = data.readline()[1:-1].split(", ")
+#     num = [int(i) for i in num]
+#     num = set(num)
+#     print(type(num),num)
+# FindeDublicate() 
+
+##4 задача
+# import math
+# radius = 15
+# print(round(math.pi * math.pow(radius, 2), 2))
+
+# from cmath import pi
+# print(pi)

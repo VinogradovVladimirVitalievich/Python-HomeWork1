@@ -42,7 +42,7 @@
 # or
 
 # symbols = "oneone"
-# used =1
+# used = [1]
 # print(symbols)
 # phrase = "onetwonine"
 # for sym in symbols:
